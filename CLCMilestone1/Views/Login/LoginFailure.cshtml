@@ -1,0 +1,11 @@
+﻿@model CLCMilestone1.Models.UserModel
+
+<div>
+    <h4>Failed to Login</h4>
+    <hr />
+    <p>There is no @Model.UserName with @Model.Password in our system. Please try again.</p>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
